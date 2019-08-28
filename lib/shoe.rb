@@ -2,12 +2,13 @@ class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
   
-  BRANDS = ['hellp']
+  BRANDS = []
 
   def initialize(brand)
     @brand = brand
+    BRANDS << @brand
     BRANDS.each do |brands|
-      if brands != @brand
+      if brands = @brand
         BRANDS << @brand
       end
     end
