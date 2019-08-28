@@ -9,7 +9,7 @@ class Shoe
     BRANDS << @brand
     BRANDS.each do |brands|
       if brands = @brand
-        BRANDS.delte(brand)
+        BRANDS.delete(brand)
       end
     end
   end
